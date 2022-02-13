@@ -1,0 +1,19 @@
+<main>
+<h1>{{title}}</h1>
+<h2>{{searchTerm}}</h2>
+
+{{#if movies.length}}
+<ul>
+    {{#each movies}}
+    <li>
+        <a href="/characters/{{id}}">{{name}}</a>
+    </li>
+    {{/each}}
+</ul>
+{{else}}
+    <p class="not-found">We're sorry, but no results were found for {{searchTerm}}.</p>
+{{/if}}
+</main>
+<div>
+    <a href="/">Make another search</a>
+</div>

@@ -1,0 +1,16 @@
+<main>
+<div>
+    <h1>{{movies.name}}</h1>
+    <img src={{img}} />
+    <p>{{desc}}</p>
+    <h2>Comics</h2>
+    <ul>
+        {{#each movies.comics.items}}
+        <li>
+            {{name}}
+        </li>
+        {{/each}}
+    </ul>
+</div>
+</main>
+<a href="/">Make another search</a>
